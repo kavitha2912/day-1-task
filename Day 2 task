@@ -1,0 +1,29 @@
+1)Create three variables (a,b,c) to same value of any integer & do the following
+Divide a by 10
+Multiply b by 50
+Add c value by 60
+Coding:
+  a=b=c=20
+  division =a/10
+  Print("division=", division) 
+  multiplication=b*50
+  Print("multiplication=", multiplication) 
+  addition=c+60
+  Print("addition=", addition) 
+
+
+2)Create a String variable of 5 characters and replace the 3rd character with G
+Coading:
+  a='write'
+  b=a.replace ('i', 'g') 
+  Print(b) 
+
+3)Create two values (a,b) of int,float data type & convert the vise versa, Hint : convert a from int to float datatype & b from float to int datatype 
+Coading:
+  a=20
+  b=3.5
+  a,b = b,a
+  Print("\n a=%f and b=%d" %(a, b)) 
+  b,a = a,b
+  Print("\n a=%d and b=%f" %(a, b)) 
+  Print() 
