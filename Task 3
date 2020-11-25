@@ -1,0 +1,33 @@
+
+print("qn.1")
+D1={"A": 6 , "B": 5}
+D2={"C": 4 , "D": 9}
+print("DICTIONARY 1 :",D1)
+print("DICTIONARY 2 :",D2)
+D1.update(D2)
+print("MERGED DICTIONARY :",D1)
+
+print("qn.2")
+D3= {"T":"TIGER" , "P":"PEN" , "E":"ELEPHANT"}
+print("DICTIONARY 3 :",D3)
+D3.pop("P")
+print("AFTER REMOVING A KEY :",D3)
+
+print("qn.3")
+LIST1 = ['G', 'S', 'G']
+LIST2 = ['GET','SET', 'GO']
+print("LIST1 :",LIST1)
+print("LIST2 :",LIST2)
+D4 = dict(zip(LIST1, LIST2))
+print("MAPPED LISTS :",D4)
+
+print("qn.4")
+SET1 = set([3,4,5,6])
+print("SET : ",SET1)
+print("LENGTH OF THE SET :", len(SET1))
+
+print("qn.5")
+SET2 = {0,1,2,3,4}
+SET3 = {3,4,5,6,7}
+print("FIRST SET :",SET2)
+print("SECOND SET :",SET3)
