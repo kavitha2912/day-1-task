@@ -1,0 +1,24 @@
+print("qn.1")
+a,b=10,5;
+def add(a,b):
+    add=a+b;
+    return add;
+print("the add is:",a+b);
+def sub(a,b):
+    sub=a-b;
+    return sub;
+print("the sub is:",a-b);
+def mul(a,b):
+    mul=a*b;
+    return mul;
+print("the mul is:",a*b);
+def div(a,b):
+    div=a/b;
+    return div;
+print("the div is:",a/b);
+
+print("qn.2")
+
+def covid(patientname,bodytemperature,temp=97):
+    print(patientname,bodytemperature);
+covid(patientname='kavi',bodytemperature=97);
