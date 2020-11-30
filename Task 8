@@ -1,0 +1,102 @@
+print("->")
+#LIST OF ERROR TYPES AND EXAMPLES
+
+print("1.IndexError :")
+list1=[1,2,3]
+list1[3]
+
+print("2.ModuleNotFoundError :")
+import maldivesmodule
+
+print("3.KeyError :")
+dic={"9":"hi","7":"hello","5":"hai"}
+dic[6]
+
+print("4.ImportError :")
+from math import polygon
+
+print("5.StopIteration :")
+iteration=iter([2,4,6,])
+next(iteration)
+next(iteration)
+next(iteration)
+next(iteration)
+
+print("6.TypeError :")
+"77"+7
+
+print("7.ValueError :")
+int("finger")
+
+print("8.NameError :")
+grade
+
+print("9.ZeroDivisionError :")
+y=11/0
+print(y)
+
+print("10.KeyboardInterruptError :")
+n=input("enter")
+
+print("11.SyntaxError :")
+len("hi")= 6
+
+
+print("->")
+# Simple Calculator
+def add(a, b):
+   return a + b
+def subtract(a, b):
+   return a - b
+def multiply(a, b):
+   return a * b
+def divide(a, b):
+   return a / b
+print("Select an operation.")
+print("+")
+print("-")
+print("*")
+print("/")
+choice = input("Enter operator to use:")
+A = int(input("Enter first number: "))
+B = int(input("Enter second number: "))
+try:
+    if choice == '+':
+       print(A,"+",B,"=", add(A,B))
+    elif choice == '-':
+       print(A,"-",B,"=", subtract(A,B))
+    elif choice == '*':
+       print(A,"*",B,"=", multiply(A,B))
+    elif choice == '/':
+       print(A,"/",B,"=", divide(A,B))
+    else:
+       print("Invalid input")
+except Exception as e:
+            print("Error : {}".format(str(e)))
+
+
+
+print("->")
+#print a message if the try block raise a name error
+try:
+  print(y)
+except NameError:
+  print("Variable y is not defined")
+except:
+  print("Something else went wrong, please check !!")
+
+
+#try-expect scenario is not required
+#->Try-except scenarios are not required if there are no run-time errors 
+
+#getting an input in try catch block
+print("->")
+age=int(input('Enter your age: '))
+if age <= 21:
+    print('You are not allowed to enter, you are too young.')
+else:
+    print('Welcome, you are old enough.')
+try:
+    age=int(input('Enter your age: '))
+except:
+    print ('You have entered an invalid value.')
