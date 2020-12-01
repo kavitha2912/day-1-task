@@ -1,0 +1,36 @@
+print("->")
+mul= lambda x,y : x*y
+print("ARFUMENT x MULTIPLIED BY ARGUMENT y :")
+print(mul(5,7))
+
+
+print("->")
+print("FIBONACCI SERIES USING LAMBDA :")
+def fibo(c): 
+    list1 = [0, 1] 
+    any(map(lambda _: list1.append(sum(list1[-4:])), range(2, c))) 
+    return list1[:c] 
+print(fibo(10))
+
+
+print("->")
+LIST2=[1,2,3,4]
+print("LIST :",LIST2)
+h=int(input("ENTER THE MULTIPLIER :"))
+NEWLIST= [i*h for i in LIST2]
+print("NEW LIST :",NEWLIST)
+
+
+print("->")
+L= [2,12,9,18,45]
+result = list(filter(lambda x: (x % 9 == 0),L))
+print("Numbers divisible by 9 are",result)
+
+
+print("->")
+LIST3=[2,7,4,6,3]
+print("LIST:",LIST3)
+print("LIST OF EVEN NUMBERS FROM MAIN LIST :")
+r = list(filter(lambda x: (x % 2 == 0),LIST3))
+print(r)
+print("NUMBER OF EVEN NUMBERS IN LIST:",len(r))
