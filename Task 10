@@ -1,0 +1,80 @@
+print("->")
+#Check that a string contains only a certain set of characters
+import re
+def charac(string):
+    charRe = re.compile(r'[^a-zA-Z0-9.]')
+    string = charRe.search(string)
+    return not bool(string)
+print("ABC :")
+print(charac("ABC"))
+print("}%{ :")
+print(charac("}%{"))
+print("345 :")
+print(charac("345"))
+print("101@ :")
+print(charac("101@"))
+
+print("->")
+#Matches a word containing 'ab'
+import re
+def match(text):
+        patterns = 'ab'
+        if re.search(patterns,  text):
+                return 'Found a match!'
+        else:
+                return('Not matched!')
+print("ac :")
+print(match("ac"))
+print("abc :")
+print(match("abc"))
+print("absent :")
+print(match("absent"))
+print("abbc :")
+print(match("abbc"))
+
+print("->")
+#Check if a number is in the end of a sring/sentence
+import re
+def number(last):
+    num=re.compile(r".*[0-9]$")
+    if num.match(last):
+        return "yes , there is a number in the end"
+    else:
+        return "no, there is no number in the last"
+print("ant")
+print(number("ant"))
+print("egg4")
+print(number("egg4"))
+print("3days")
+print(number("3days"))
+print("my birthday is on 15")
+print(number("my birthday is on 15"))
+
+print("do5g")
+print(number("do5g"))
+
+    
+print("->")
+#Search the numbers (0-9) of length between 1 to 3 in a given string
+import re
+res = re.finditer(r"([0-9]{1,3})","Exercises number 1, 12, 13, and 345 are important" )
+print("Number of length 1 to 3 :")
+for n in res:
+     print(n.group(0))
+	 
+print("->")
+#Match a string that contains only uppercase letters
+import re
+def ma(text):
+        pat= '^[A-Z]'
+        if re.search(pat,  text):
+                return 'Found a match!'
+        else:
+                return 'Not matched!'
+
+print("good day")
+print(ma("good day"))
+print("WELCOME BACK FRIENDS")
+print(ma("WELCOME BACK FRIENDS"))
+print("Wow THAT is amazing")
+print(ma("Wow THAT is amazing"))
