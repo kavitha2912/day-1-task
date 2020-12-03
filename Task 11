@@ -1,0 +1,27 @@
+print("1")    
+list1 = ["banana", "camel", "dog"] 
+list2 = ['b', 'c', 'd']
+print("list2 :",list1)
+print("list1 :",list2)
+print(list(zip(list1, list2)))
+
+
+print("2")
+range1= list (range(1,8))
+list1=["pen","root","ant","lemon","gun","food","milk",]
+print("LIST:",list1)
+x=list(zip(range1,list1))
+print(x)
+
+
+print("3")
+L=[4,3,6,5,2,1]
+print("UNSORTED LIST:",L)
+print("SORTED LIST:",sorted(L))
+
+
+print("4")
+lis1 = [1,2,3,4,5] 
+is_even = lambda x: x % 2 == 0
+lis2 = list(filter(is_even, lis1)) 
+print(lis2) 
