@@ -1,0 +1,19 @@
+import json
+#dictionary
+print(json.dumps({"Name":"kavi","Age":20,"Gender":"female"}))
+#list
+print(json.dumps(["reg no","name","subject"]))
+#string
+print(json.dumps(("plants","animals")))
+#tuple
+print(json.dumps("purple"))
+#integer
+print(json.dumps(29))
+#float
+print(json.dumps(56.7))
+#True
+print(json.dumps(True))
+#False
+print(json.dumps(False))
+#None
+print(json.dumps(None))             
